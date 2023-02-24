@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+<meta charset="UTF-8">
+<title>後期末プロジェクト</title>
+  <link rel="stylesheet" href="img.css">
+  <script src="1.js"></script>
+  <script src="2.js"></script>
+  <script src="3.js"></script>
+  <script src="EX.js"></script>
+  
+
+</head>
+
 <body>
-    <meta charset="UTF-8">
-    <title> 後期期末プロジェクト</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <script src=“myjs.js"></script> <!--この行を追加-->
-    
-    <link rel="stylesheet" href="mystyle.css"> <!--この行を追加-->
-    <link rel="stylesheet" href="imagechange.css">
-    <!--
-     <script src="myjs.js"></script>
-  --> 
-
-  <h1>後期期末プロジェクト</h1>
-  <br>
-
-    <h2>挨拶</h2>
-    <input type="button" value="あいさつ" 
- onclick="sayhello71();">
- <p>誰？<input type="text" id="who71"></p>
-
-<script src="ex1-1.js"></script>
-<script src="ex1-2.js"></script>
-<script src="ex1-3.js"></script>
-<script src="ex1-4.js"></script>
-<p class="sample3">アンパンマンキャラクターを元に画像変換！</p>
+<h1>～歴史クイズ～</h1><br>
 <br>
-<div id="image1" >
-<input type="button" value="画像の変更" onclick="imgchange1();">
-<img src='./image/anpanmanface.jpg' id="logo" alt="anpanmanlogo" class="imagechange">
-<br>
-<input type="button" value="元に戻す" onclick="imgchange2();">
-<!--<img src='./image/anpanmanlogo.png' id="top" alt="anpanmanlogo">-->
-</div>
-<br>
+<h3>第１問</h3>
+  <img src='./img/徳川家康.png' alt="問題１" class="imgchange">
+<p>写真の人物は誰？</p>
+<p>
+答（漢字４字）：<input type="text" id="kotae1">
+<input type="button" value="解答" onclick="mondai1();">
+</p>
 
-<input type="button" value="画像の変更３秒"onclick="setTimeout('img()',3000)">
-<img src="./image/kokinchansmile.jpg" id="logo3" alt="kokinchancry"class="logo3">
-<br>
-<p class="sample4">なぞなぞ</p>
-<p>パンはパンで食べられないパンはなに？<br></p>
-＜ヒント＞家庭用調理器具（カタカナ）</p>
-  <p>
-  <input type="text" id="answer">
-  <input type="button" value="解答" onclick="nazo();">
-  </p>
+<h3>第２問</h3>
+<p>第１問の人物が開いた幕府の名称は？</p>
+<p>
+答（漢字４字）：<input type="text" id="kotae2">
+<input type="button" value="解答" onclick="mondai2();">
+</p>
+
+<h3>第３問</h3>
+  <p>第１問の人物が勝利した１６００年に起こった天下分け目の戦いは？</p>
+<p>
+答（６字）：<input type="text" id="kotae3">
+<input type="button" value="解答" onclick="mondai3();">
+</p>
+
+<h3>EX</h3>
+  <img src='./img/天海.jpg' alt="問題EX" class="imgchange">
+<p>第１問の人物に重用された写真の人物の名前は？</p>
+<p>
+答（漢字２字）：<input type="text" id="kotaeEX">
+<input type="button" value="解答" onclick="mondaiEX();">
+</p>
+
 </body>
-</html> 
+</html>
